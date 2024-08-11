@@ -1,41 +1,89 @@
-body {
-  text-align: center;
+/* Global Styles */
+* {
+  font-family: "Play", sans-serif;
+  font-style: normal;
 }
 
-.btn {
-  height: 200px;
-  width: 200px;
-  border-radius: 20%;
-  border: 10px solid black;
-  margin: 1rem;
+/* Body Styling */
+body {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0%;
+  padding: 0%;
+  overflow: hidden;
 }
+
+/* Text Container Styling */
+.text-container {
+  background-color: #9c9c9c;
+}
+
+/* Main Heading (h1) Styling */
+h1 {
+  margin: 0%;
+  padding: 0%;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+/* Subheading (h2) Styling */
+h2 {
+  margin: 2vw;
+}
+
+/* Game Rule Button Styling */
+.rule {
+  background-color: white;
+  border: none;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+/* Game Rule Button Hover Effect */
+.rule:hover {
+  cursor: pointer;
+}
+
+/* General Button Styling */
+.btn {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 20%;
+  border: 5px solid black;
+  margin: 1vw;
+}
+
+/* Button Container Styling */
 .btn-container {
+  padding-top: 5vh;
   display: flex;
   justify-content: center;
 }
 
-.purple {
-  background-color: #d95980;
+/* Button Color Classes */
+.green {
+  background-color: #2bd325;
 }
 .yellow {
-  background-color: #f99b45;
+  background-color: #ffe417;
 }
-.green {
-  background-color: #85f981;
+.red {
+  background-color: #ed1c24;
 }
 .blue {
-  background-color: #63aac0;
+  background-color: #355bf5;
 }
 
-h1 {
-  margin-top: 0%;
-}
-h2 {
-  margin-bottom: 0%;
-}
+/* Flash Effects */
 .flash {
   background-color: white;
 }
 .userFlash {
   background-color: #000000;
+}
+
+/* Hide Audio Controls */
+audio {
+  display: none;
 }
