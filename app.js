@@ -18,7 +18,7 @@ let btnSound = function () {
   btnsSound.play();
 };
 
-let startSound = document.querySelector(".startSound"); // start sound
+let startSound = document.querySelector(".startSound"); // Start sound
 let startSoundPlay = function () {
   startSound.play();
 };
@@ -28,10 +28,10 @@ let gameOverSound = function () {
   endSound.play();
 };
 
-// Event listener to start the game on any key press
-document.addEventListener("keydown", function () {
-  if (started === false) {
-    console.log("game is started");
+// Event listener to start the game when the "Play Game" button is clicked
+document.querySelector(".rule").addEventListener("click", function () {
+  if (!started) {
+    console.log("Game is started");
     started = true;
     startSoundPlay();
     levelUp(); // Move to the first level
@@ -79,7 +79,7 @@ function checkAns(idx) {
     }
   } else {
     // If the user input is incorrect, end the game
-    h2.innerHTML = `Game Over! Your Score was <b>${level}</b> <br> Press any key to Restart`;
+    h2.innerHTML = `Game Over! Your Score was <b>${level}</b> <br> Press "Play Game" to Restart`;
     document.querySelector("body").style.background = "red"; // Change background to red
     gameOverSound(); // Play game over sound
     setTimeout(function () {
